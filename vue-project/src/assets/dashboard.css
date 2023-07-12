@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.dash-body {
+  display: flex;
+}
+.dash-sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 105px;
+  height: 100vh;
+  padding: 0 1.7rem;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background-color: rgba(13, 60, 125, 1);
+}
+.dash-sidebar:hover {
+  width: 240px;
+  transition: 0.8s;
+}
+.dash-logo {
+  height: 80px;
+  padding: 16px;
+}
+.dash-menu {
+  height: 88%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+.dash-menu li {
+  padding: 1rem;
+  margin: 8px 0;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.dash-menu li:hover,
+.dash-menu .active {
+  background-color: #e0e0e058;
+}
+.dash-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.dash-menu {
+  overflow: hidden;
+}
+.dash-menu a i {
+  font-size: 1.2rem;
+}
+.dash-logout {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.main--content {
+  position: relative;
+  background-color: #ebe9e9;
+  width: 100%;
+  padding: 1rem;
+}
+.header--wrapper img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.header--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 2rem;
+  margin-bottom: 1rem;
+}
+.header--title {
+  color: rgba(13, 60, 125,1);
+}
+.user--info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.search--box {
+  background-color: #ebe9e9;
+  border-radius: 15px;
+  color: grey;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+}
+.search--box input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.search--box i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.search--box i:hover {
+  transform: scale(1.1);
+}
+
+.card--container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.card--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.main--title {
+  color: rgba(13, 60, 125,1);
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.payment--card {
+  background-color: #ebe9e9;
+  border-radius: 10px;
+  padding: 1.2rem;
+  width: 290px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+}
+.payment--card:hover {
+  transform: translateY(-5px);
+}
+.card--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.amount {
+  display: flex;
+  flex-direction: column;
+}
+.card--header .title {
+  font-size: 12px;
+  font-weight: 200;
+}
+.amount--value {
+  font-size: 24px;
+  font-family: "Courier New", "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+.card--header .icon {
+  color: white;
+  padding: 1rem;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.card--detail {
+  font-size: 18px;
+  color: black;
+  letter-spacing: 2px;
+  font-family: "Courier New", "Courier New", Courier, monospace;
+}
+
+.light-red {
+  background-color: rgb(251, 233, 254);
+}
+.light-purple {
+  background-color: rgb(254, 226, 254);
+}
+.light-green {
+  background-color: rgb(235, 254, 235);
+}
+.light-blue {
+  background-color: rgb(236, 236, 254);
+}
+.dark-red {
+  background-color: red;
+}
+.dark-purple {
+  background-color: purple;
+}
+.dark-green {
+  background-color: green;
+}
+.dark-blue {
+  background-color: blue;
+}
+
+.table--search {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 60px;
+}
+
+.tabular--wrapper {
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.table--container {
+  width: 100%;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.table--container table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table--container table thead {
+  background-color: rgba(13, 60, 125, 1);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.table--container table thead th {
+  background-color: rgba(13, 60, 125, 1);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 15px;
+  text-align: center;
+}
+
+.table--container table tbody {
+  background-color: #f2f2f2;
+  text-align: center;
+  max-height: 300px; /* Add this line to set a maximum height for the table body */
+  overflow-y: scroll; /* Add this line to enable scrolling only for the table body */
+}
+
+.table--container table td {
+  padding: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.table--container tfoot {
+  background-color: rgba(13, 60, 125, 1);
+  font-weight: bold;
+  color: #fff;
+}
+
+.table--container tfoot td {
+  color: #fff;
+  padding: 15px;
+}
+
+.table--container button {
+  color: green;
+  background: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .dash-sidebar {
+    width: 100px;
+    padding: 0 0.7rem;
+  }
+
+  .dash-sidebar:hover {
+    width: 160px;
+  }
+
+  .dash-menu li {
+    padding: 0.7rem;
+    margin: 4px 0;
+  }
+
+  .dash-menu a {
+    gap: 0.5rem;
+  }
+
+  .header--wrapper {
+    padding: 10px 1rem;
+  }
+
+  .header--title {
+    font-size: 12px;
+  }
+
+  .search--box {
+    gap: 3px;
+    padding: 2px 8px;
+  }
+
+  .search--box input {
+    padding: 8px;
+  }
+
+  .card--container {
+    padding: 1rem;
+  }
+
+  .payment--card {
+    width: 100%;
+  }
+
+  .card--detail {
+    font-size: 14px;
+  }
+
+  .table--container {
+    max-height: 200px;
+  }
+}

@@ -1,0 +1,131 @@
+.footer {
+  background-color: rgba(13, 60, 125,1);
+  border-top:2px solid #da6020;
+  padding: 70px 0;
+  margin-bottom: 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.ft_container {
+  max-width: 1170px;
+  margin: auto;
+}
+.ft_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .ft_row ul{
+    list-style: none;
+} */
+.footer-col {
+  width: 25%;
+  /* padding: 0 15px; */
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 200;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #da6020;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #da6020;
+  padding-left: 10px;
+}
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}.icon_link {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .btn_social_media {
+    display: inline-block;
+    width: 50px; /* Updated width */
+    height: 50px; /* Updated height */
+    background-color: #f1f1f1;
+    margin: 10px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px -5px white;
+    color: #da6020;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .btn_social_media i {
+    line-height: 50px; /* Updated line-height */
+    font-size: 26px;
+    transition: 0.2s linear;
+  }
+  
+  .btn_social_media:hover i {
+    transform: scale(1.3);
+    color: #f1f1f1;
+  }
+  
+  .btn_social_media::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background-color: #da6020;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+  
+  .btn_social_media:hover::before {
+    animation: animate_hover 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+  
+  @keyframes animate_hover {
+    0% {
+      left: -110%;
+      top: 90%;
+    }
+    50% {
+      left: 10%;
+      top: -30%;
+    }
+    100% {
+      top: -10%;
+      left: -10%;
+    }
+  }
+  

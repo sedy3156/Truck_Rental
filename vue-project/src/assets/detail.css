@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  width: 100%;
+  height: 90vh;
+  background-color: white;
+}
+.about h2 {
+  margin-bottom: 50px;
+}
+.about img {
+  height: 520px;
+  width: 520px;
+  max-width: 100%;
+}
+
+.about-text {
+  width: 555px;
+  max-width: 90%;
+}
+
+.about-main {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about h1 {
+  color: rgba(218, 96, 32, 0.8);
+  font-size: 50px;
+  text-transform: capitalize;
+  margin: 20px;
+}
+
+.about-text h5 {
+  color: rgba(218, 96, 32, 0.8);
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.about button {
+  background-color: rgba(13, 60, 125,1);;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+  border: 2px solid transparent;
+  padding: 13px 30px;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.about ul {
+  height: 45px;
+  font-size: 13px;
+  margin-bottom: 100px;
+}
+
+.about ul li {
+  margin: 10px 0 0 0;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.about ul li i {
+  margin-right: 5px;
+  color: #0c3ed6;
+  font-size: 20px;
+  border-radius: 0;
+}
+
+.about ul li span {
+  text-transform: capitalize;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px) {
+  .about {
+    padding-top: 50px;
+  }
+
+  .about img {
+    height: auto;
+    width: 100%;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-main {
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+
+  .about h1 {
+    font-size: 50px;
+  }
+
+  .about-text h5 {
+    font-size: 20px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .about button {
+    padding: 10px 20px;
+  }
+
+  .about ul {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about h1 {
+    font-size: 40px;
+    margin: 10px;
+  }
+
+  .about-text h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .about button {
+    padding: 8px 15px;
+  }
+
+  .about ul {
+    height: auto;
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  .about ul li {
+    margin: 5px 0 0 0;
+  }
+
+  .about ul li i {
+    font-size: 16px;
+  }
+
+  .about ul li span {
+    font-size: 12px;
+  }
+}

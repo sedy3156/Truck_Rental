@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+.lg_body{
+    /* opacity: 0.8; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("./image/van2.jpg");
+    background-size: cover;
+}
+.lg_center {
+  /* opacity: 0.5; */
+  /* background: linear-gradient(120deg, #b91d06, #fca93b); */
+  /* background-image: url("./fond2.jpg"); */
+  background: #eeeeee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  /* background: white; */
+  border-radius: 10px;
+}
+.lg_center h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 50px;
+  font-family: "Century Gothic";
+  color: #737f8f;
+  text-align: center;
+  padding: 0 0 18px 0;
+  border-radius: 0 0 10px 10px;
+  /* border-bottom: 1px solid #da6020; */
+}
+.lg_center p{
+  padding:0 40px 0 40px;
+  /* text-transform: capitalize; */
+  text-align: center;
+  font-size: 12px;
+}
+.lg_center p span{
+  color: #da6020;
+}
+.lg_center form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .lg_txt_field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+
+.lg_txt_field input {
+  color: #5a5a5a;
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.lg_txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+}
+.lg_txt_field span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(13, 60, 125,1);
+}
+.lg_txt_field input:focus ~ label,
+.lg_txt_field input:valid ~ label {
+  top: -5px;
+  color: #da6020;
+}
+.lg_txt_field input:focus ~ span::before,
+.lg_txt_field input:valid ~ span::before {
+  width: 100%;
+}
+.lg_pass {
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+.lg_pass:hover {
+  text-decoration: underline;
+}
+.loginbtn{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: rgba(13, 60, 125,1);
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+.loginbtn:hover {
+  border-color: rgba(13, 60, 125,1);
+  transition: 0.5s;
+}
+.lg_signup_link {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #6666;
+}
+.lg_signup_link a {
+  color: rgba(13, 60, 125,1);
+  text-decoration: none;
+}
+.lg_signup_link a:hover {
+  text-decoration: underline;
+}
